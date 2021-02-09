@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7C5E99;
+    border-bottom: 10px solid #000;
+    padding: 10px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+img {
+    width: 100px;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    /*serve pra deixar do lado direito*/
+    color: #FFF;
+    font-size: 20px;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    /*mdn text decoration pra saber mais decorações de texto. NÃO USE W3C SCHOOLS*/
+    margin-right: 30px;
+}
+
+a::before {
+    /*é chamado pseudo elemento*/
+    content: "";
+    display: inline-block;
+    background-color: #F25A70;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+#button {
+    display: inline-block;
+    /*Muda o comportamento na tela (display)*/
+    /*Serve pra fazer que as propriedades height e width sejam modificáveis */
+    background-color: #F25A70;
+    height: 60px;
+    line-height: 60px;
+    /*Serve pra deixar o item no meio. MAS SÓ SERVE SE TIVER UMA LINHA. Se tiver quebra, não consegue*/
+    padding: 18px;
+    box-shadow: 5px 5px 0 black;
+    /*Se quiser que a sombra suba, tem que utilizar o valor negativo, com o - na frente*/
+    /*ele copia a caixa, fazendo uma sombra*/
+    margin-right: 0;
+    transition: transform 100ms;
+    /*funciona como uma animação, tempo de duração.*/
+}
+
+#button:hover {
+    /*esse pseudo-elemento muda a cor do botão ou qualquer outra coisa que vc coloque o hover */
+    transform: scale(1.06);
+    /*essa propriedade transform scale aumenta o tamanho do botão, o valor que tá dentro é o tamanho que vai ser mudado o botão. Tem outras propriedades é só procurar por MDN transform*/
+}
