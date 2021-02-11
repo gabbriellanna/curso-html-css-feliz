@@ -1,0 +1,8 @@
+/*esse arquivo é pra otimizar o código. Onde tem component é bom reutilizar. No projeto, elementos como o título, botão etc se repetem e precisam ser otimizados*/
+
+h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 40px;
+    color: #F25A70;
+    text-shadow: 4px 4px 0 #000;
+}
