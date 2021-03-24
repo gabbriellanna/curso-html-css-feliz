@@ -8,7 +8,7 @@
     /*Serve pra deixar o item no meio. MAS SÓ SERVE SE TIVER UMA LINHA. Se tiver quebra, não consegue*/
     margin-right: 0;
     transition: transform 100ms cubic-bezier(.45, .97, .69, 2.48);
-    box-shadow: 5px 5px 0 black;
+    box-shadow: 5px 5px 0 #FFF;
     /*Se quiser que a sombra suba, tem que utilizar o valor negativo, com o - na frente*/
     /*ele copia a caixa, fazendo uma sombra*/
     font-size: 20px;
