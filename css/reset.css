@@ -1,6 +1,17 @@
+body {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+}
+
 body,
 h1,
 h2,
-h3 {
+h3,
+figure {
     margin: 0;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    /*funciona pra herdar o comportamento do "pai"*/
 }

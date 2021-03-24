@@ -1,0 +1,14 @@
+.main-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    /*dica: apesar de poder colocar tudo em uma propriedade só, é interessante colocar a propriedade específica porque o programador tem mais controle do que está sendo feito.*/
+}
+
+.main-footer .action {
+    /*É bom lembrar que a gente seleciona a classe pai pra selecionar a classe filho, nesse caso, o action. Pq ai vai herdar as propriedades do pai pro filho*/
+    margin-right: 20px;
+    margin-left: 20px;
+}

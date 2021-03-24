@@ -1,0 +1,33 @@
+.main-button {
+    /*# é id e . é classe*/
+    display: inline-block;
+    /*Muda o comportamento na tela (display)*/
+    /*Serve pra fazer que as propriedades height e width sejam modificáveis */
+    background-color: #F25A70;
+    padding: 18px 20px;
+    /*Serve pra deixar o item no meio. MAS SÓ SERVE SE TIVER UMA LINHA. Se tiver quebra, não consegue*/
+    margin-right: 0;
+    transition: transform 100ms cubic-bezier(.45, .97, .69, 2.48);
+    box-shadow: 5px 5px 0 black;
+    /*Se quiser que a sombra suba, tem que utilizar o valor negativo, com o - na frente*/
+    /*ele copia a caixa, fazendo uma sombra*/
+    font-size: 20px;
+    color: #FFF;
+    /*funciona como uma animação, tempo de duração.*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    /*esse pseudo-elemento muda a cor do botão ou qualquer outra coisa que vc coloque o hover */
+    transform: scale(1.06);
+    /*essa propriedade transform scale aumenta o tamanho do botão, o valor que tá dentro é o tamanho que vai ser mudado o botão. Tem outras propriedades é só procurar por MDN transform*/
+}
+
+.main-button.-full {
+    width: 100%;
+}
+
+.main-button.-full:hover {
+    transform: scale(1.01)
+}

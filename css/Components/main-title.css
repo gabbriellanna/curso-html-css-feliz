@@ -1,0 +1,16 @@
+/*esse arquivo é pra otimizar o código. Onde tem component é bom reutilizar. No projeto, elementos como o título, botão etc se repetem e precisam ser otimizados*/
+
+.main-title {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 40px;
+    color: #F25A70;
+    text-shadow: 4px 4px 0 #000;
+}
+
+.main-title.-second {
+    /*fica junto porque tenha a classe title e second, não é buscar do pai pro filho, como quando fica no espaço*/
+    /*Classe second é variação de componente. Pra marcar isso pod ser um _ ou -, depende do que o time usa no momento do trabalho */
+    color: #FFF;
+    text-shadow: none;
+    text-align: center;
+}

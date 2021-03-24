@@ -15,33 +15,192 @@
     <link rel="stylesheet" href="css/reset.css">
     <!--tem que vir antes pq reseta o comportamento do navegador e depois que estiliza nos próximos arquivos do CSS-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/Components/title.css">
-    <link rel="stylesheet" href="css/Components/subtitle.css">
-    <link rel="stylesheet" href="css/Components/box.css">
-
+    <link rel="stylesheet" href="css/Components/main-title.css">
+    <link rel="stylesheet" href="css/Components/main-subtitle.css">
+    <link rel="stylesheet" href="css/Components/main-box.css">
+    <link rel="stylesheet" href="css/Components/main-button.css">
+    <link rel="stylesheet" href="css/Components/main-action.css">
+    <link rel="stylesheet" href="css/Components/main-header.css">
+    <link rel="stylesheet" href="css/Components/main-banner.css">
+    <link rel="stylesheet" href="css/Components/main-section.css">
+    <link rel="stylesheet" href="css/Components/skill-tec.css">
+    <link rel="stylesheet" href="css/Components/progress-bar.css">
+    <link rel="stylesheet" href="css/Components/wrapper-skill.css">
+    <link rel="stylesheet" href="css/Components/card-project.css">
+    <link rel="stylesheet" href="css/Components/wrapper-card.css">
+    <link rel="stylesheet" href="css/Components/main-description.css">
+    <link rel="stylesheet" href="css/Components/button-arrow.css">
+    <link rel="stylesheet" href="css/Components/node-card.css">
+    <link rel="stylesheet" href="css/Components/main-carousel.css">
+    <link rel="stylesheet" href="css/Components/main-footer.css">
+    <link rel="stylesheet" href="css/Components/main-label.css">
+    <link rel="stylesheet" href="css/Components/main-input.css">
+    <link rel="stylesheet" href="css/Components/main-form.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="main-header">
         <!--algumas tags ocupam todo o espaço da tela, enquanto outras abarcam apenas o conteúdo-->
-        <img src="assets/img/anna.jpg" alt="Foto de Anna Gabriella">
+        <img class="foto-anna" src="img/anna.jpg" alt="Foto de Anna Gabriella">
         <nav>
-            <a href="" lang="en">Skills</a>
+            <a class="main-action" href="#skills" lang="en">Skills</a>
             <!--atributo global. Benefício: SEO (Searching engine optimization. É bom pro termo ingles ou em outra língua pq avisa a softwares leitores)-->
-            <a href="">Projetos</a>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-            <a id="button" href="" lang="en">Download CV</a>
+            <a class="main-action" href="#projects">Projetos</a>
+            <a class="main-action" href="#about">Sobre</a>
+            <a class="main-action" href="#contact">Contato</a>
+            <a class="main-button" href="" lang="en">Download CV</a>
             <!--se não for em menu/links pode fazer com a tag <em lang="língua">expressão</em>. Tag de ênfase-->
         </nav>
     </header>
-    <h1>Anna Gabriella</h1>
-    <h2>Aspirante a FrontEnd developer</h2>
 
-    <div id="box"></div>
+    <section class="main-banner">
+        <div class="wrapper">
+            <div class="main-box">
+                <h1 class="main-title">Anna Gabriella</h1>
+                <h2 class="main-subtitle">Aspirante a FrontEnd developer</h2>
+            </div>
+
+            <div class="navigation">
+                <a class="main-button" href="" lang="en">Download CV</a>
+                <a class="main-button">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="main-section">
+        <h2 class="main-title -second">Skills</h2>
+        <div class="wrapper-skill">
+            <article class="skill-tec">
+                <!--tag  article: qqer conteúdo do site que faz sentido-->
+                <img class="icon" src="img/ico_html5.png" alt="Logo do HTML5 em pixel art">
+                <div class="right">
+                    <h3 class="title">HTML</h3>
+                    <progress class="progress-bar" max="100" value="30">
+                    30%
+                </progress>
+                </div>
+            </article>
+            <article class="skill-tec">
+                <img class="icon" src="img/ico_css3.png" alt="Logo do CSS3 em pixel art">
+                <div class="right">
+                    <h3 class="title">CSS3</h3>
+                    <progress class="progress-bar" max="100" value="20">
+                        20%
+                    </progress>
+                </div>
+            </article>
+            <article class="skill-tec">
+                <img class="icon" src="img/ico_js.png" alt="Logo do JavaScript em pixel art">
+                <div class="right">
+                    <h3 class="title">JavaScript</h3>
+                    <progress class="progress-bar" max="100" value="5">
+                        5%
+                    </progress>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="projects" class="main-section -bgBlack -bdFirst">
+        <h2 class="main-title -second">Projetos</h2>
+        <div class="wrapper-card">
+            <a href="">
+                <figure class="card-project">
+                    <!--envolve grupos de imagens-->
+                    <img class="logo" src="img/firedlabs.png" alt="Logo da FiredLabs">
+                </figure>
+            </a>
+            <a href="">
+                <figure class="card-project">
+                    <img class="logo" src="img/collabcode.png" alt="Logo da Collab Code">
+                </figure>
+            </a>
+            <a href="">
+                <figure class="card-project">
+                    <img class="logo" src="img/portfolio.png" alt="Avatar">
+                </figure>
+            </a>
+        </div>
+    </section>
+    <section id="about" class="main-section -bdSecond -bdBlack">
+        <h2 class="main-title -second">Sobre</h2>
+        <p class="main-description">
+            Anna Gabriella, atualmente, está em transição de carreira para se tornar desenvolvedora FrontEnd. É professora de Língua Inglesa formada pela UFPE, mestra em Letras pela UFS e doutoranda em Letras também pela UFS. Na área de tecnologia, estuda HTML, CSS
+            e lógica de programação. Acredita que, após ter uma boa base em lógica, estudará JavaScript para se tornar desenvolvedora FrontEnd. Em sua formação anterior, possui experiência nas áreas de ensino de Língua Inglesa, tradução e revisão de textos,
+            pesquisas relacionadas ao uso da língua e como guia turística.
+        </p>
+        <section class="main-carousel">
+            <button class="button-arrow -left"><span class="content">Avançar</span></button>
+            <div class="items">
+                <div class="elements">
+                    <figure class="node-card">
+                        <figcaption class="title">2014</figcaption>
+                        <div class="logo">
+                            <img src="img/brennand.png" alt="Logo da Oficina Brennand">
+                        </div>
+                    </figure>
+                    <figure class="node-card">
+                        <figcaption class="title">2015</figcaption>
+                        <div class="logo">
+                            <img src="img/nlc-logo.png" alt="Logo do Núcleo de Línguas e Cultura">
+                        </div>
+                    </figure>
+                    <figure class="node-card">
+                        <figcaption class="title">2018</figcaption>
+                        <div class="logo">
+                            <img src="img/senac-logo.png" alt="Logo do SENAC">
+                        </div>
+                    </figure>
+                    <figure class="node-card">
+                        <figcaption class="title">2019</figcaption>
+                        <div class="logo">
+                            <img src="img/capes-logo.png" alt="Logo da CAPES">
+                        </div>
+                    </figure>
+                    <figure class="node-card">
+                        <figcaption class="title">2021</figcaption>
+                        <div class="logo">
+                            <img src="img/senac-logo.png" alt="Logo do SENAC">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <button class="button-arrow -right"><span class="content">Voltar</span></button>
+            <!--span não tem conteúdo semântico, é apenas para esconder o texto do botão-->
+        </section>
+    </section>
+    <form id="contact" class="main-form">
+        <legend class="main-title -second">Contatos</legend>
+        <!--A tag legend é específica pro formulário, funciona como um títutlo-->
+        <!--Label é o que vai dar a informação que o usuário precisa preencher-->
+        <!--aqui nao vamos precisar fazer o formulário com JS, usamos apenas tag. A tag input serve para solicitar o dado do usuário-->
+        <label class="main-label" for="name">Nome</label>
+        <input class="main-input" id="name" type="text" required>
+
+        <label class="main-label" for="email">Email</label>
+        <input class="main-input" id="email" type="email" required>
+        <!--required é pra o usuário preencher o campo-->
+        <!--É bom colocar o tipo email pq ele já reconhece quando coloca um email válido-->
+        <!--Aqui utilizei o ID pra relacionar a tag a seu respectivo campo, name para o nome e email para email.-->
+        <label class="main-label">Mensagem</label>
+        <textarea class="main-input -textarea" id="message" required></textarea>
+        <button class="main-button -full" type="submit">Enviar</button>
 
 
+    </form>
+
+    <footer class="main-footer">
+        <a class="action" href="https://github.com/gabbriellanna" target="_blank">
+            <img src="img/logo-github.jpg" alt="Logo do GitHub em pixel art">
+        </a>
+        <a class="action" href="https://www.linkedin.com/in/anna-almeida-b6a5b81a6/" target="_blank">
+            <img src="img/logo-linkedin.jpg" alt="Logo do LinkedIn em pixel art">
+        </a>
+        <a class="action" href=" http://lattes.cnpq.br/8485448911620550" target="_blank">
+            <img src="img/logo-lattes.jpg" alt="Logo do Lattes em pixel art">
+        </a>
+    </footer>
+    <script src="js/components/main-carousel.js"></script>
 </body>
 
 </html>

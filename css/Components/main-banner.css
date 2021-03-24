@@ -1,0 +1,25 @@
+.main-banner {
+    /*../ é pra sair da pasta e chegar em outra, como ai tem dois ../ é pq "subiu" duas pastas*/
+    background-image: url(../../img/anna-foto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 800px;
+    border-bottom: 10px solid #FFF;
+    padding-top: 115px;
+    padding-left: 90px;
+}
+
+.main-banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 728px;
+}
+
+.main-banner .main-box {
+    margin-bottom: 40px;
+}
+
+.main-banner .navigation {
+    display: flex;
+    justify-content: space-around;
+}

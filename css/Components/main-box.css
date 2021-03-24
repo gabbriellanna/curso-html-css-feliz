@@ -1,0 +1,13 @@
+.main-box {
+    display: inline-block;
+    width: 640px;
+    background-color: #3A4042;
+    box-shadow: 10px 10px 0 #ffffff;
+    text-align: center;
+    padding: 42px 44px;
+}
+
+.main-box .main-title {
+    /*aqui quer dizer que os "filhos" de box, nesse caso, h1 vão ter os comportamentos pedidos*/
+    margin-bottom: 28px;
+}

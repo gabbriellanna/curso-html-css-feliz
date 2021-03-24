@@ -1,0 +1,17 @@
+.main-form {
+    padding: 50px 40px;
+    /*Aqui foi possível usar a forma resumida do padding porque os 4 lados recebem valor. 50 (cima e baixo) 40 (direita e esquerda) */
+}
+
+.main-form .main-title {
+    margin-bottom: 50px;
+}
+
+.main-form .main-input {
+    /*Aqui não é uma variação, aqui é a classe .main-input que tá dentro da classe .main-form*/
+    margin-bottom: 20px;
+}
+
+.main-form .main-input.-textarea {
+    margin-bottom: 40px;
+}

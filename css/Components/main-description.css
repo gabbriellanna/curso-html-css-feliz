@@ -1,0 +1,10 @@
+.main-description {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 300px;
+    line-height: 1.3;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*tamanho do espaçamento. No CSS é sempre desde a parte de cima, o espaço vazio até a "Linha" em si*/
+    /* o line-height: multiplica o font-size. No figma temos que chegar no valor 39. Por isso multiplicou 30px do font-size por 1.3  */
+}
